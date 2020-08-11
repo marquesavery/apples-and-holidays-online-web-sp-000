@@ -82,8 +82,8 @@ def all_supplies_in_holidays(holiday_hash)
       join_holiday = cap2_holiday.join(" ")
       puts "#{join_holiday}:"
     else
-      cap_holiday = season_string.capitalize
-      puts "#{cap_holiday}:"
+      cap_season = season_string.capitalize
+      puts "#{cap_season}:"
     end
     holiday_name.each do |holiday, supplies|
       cap_holiday = holiday.capitalize
