@@ -72,11 +72,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday_name|
     season_string = season.to_s
+    binding.pry
     if season_string.include?("_")
       cap2_season = []
       split_season = season_string.split("_")
       split_season.each do |cap|
-        binding.pry
         cap2_season << cap.capitalize
       end
       join_season = cap2_season.join(" ")
