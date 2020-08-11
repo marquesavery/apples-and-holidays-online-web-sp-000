@@ -77,13 +77,13 @@ def all_supplies_in_holidays(holiday_hash)
       cap2_season = []
       split_holiday = holiday_name_string.split("_")
       split_holiday.each do |h|
-        cap2_season << h.capitalize
+        cap2_holiday << h.capitalize
       end
-      join_season = cap2_season.join(" ")
-      puts "#{join_season}:"
+      join_holiday = cap2_holiday.join(" ")
+      puts "#{join_holiday}:"
     else
-      cap_season = season_string.capitalize
-      puts "#{cap_season}:"
+      cap_holiday = season_string.capitalize
+      puts "#{cap_holiday}:"
     end
     holiday_name.each do |holiday, supplies|
       cap_holiday = holiday.capitalize
