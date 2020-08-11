@@ -75,9 +75,9 @@ def all_supplies_in_holidays(holiday_hash)
 #    binding.pry
     if holiday_name_string.include?("_")
       cap2_season = []
-      split_season = season_string.split("_")
-      split_season.each do |cap|
-        cap2_season << cap.capitalize
+      split_holiday = holiday_name_string.split("_")
+      split_holiday.each do |h|
+        cap2_season << h.capitalize
       end
       join_season = cap2_season.join(" ")
       puts "#{join_season}:"
