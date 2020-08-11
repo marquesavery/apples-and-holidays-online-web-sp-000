@@ -82,6 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
             cap2_holiday << h.capitalize
           end
           join_holiday = cap2_holiday.join(" ")
+          join_supply = supplies.join(", ")
           puts "#{join_holiday}: #{join_supply}"
         else
           cap_holiday = holiday.capitalize
