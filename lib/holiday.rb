@@ -76,11 +76,11 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_name.each do |holiday, supplies|
       holiday_string = holiday.to_s
         if holiday_string.include?("_")
-        cap2_holiday = []
-        split_holiday = holiday_name_string.split("_")
-        split_holiday.each do |h|
-          cap2_holiday << h.capitalize
-        end
+          cap2_holiday = []
+          split_holiday = holiday_string.split("_")
+          split_holiday.each do |h|
+            cap2_holiday << h.capitalize
+          end
       join_holiday = cap2_holiday.join(" ")
       puts "#{join_holiday}:"
 #    else
