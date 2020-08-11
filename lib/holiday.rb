@@ -71,9 +71,9 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, holiday_name|
-    season_string = season.to_s
+    holiday_name_string = holiday_name.to_s
 #    binding.pry
-    if season_string.include?("_")
+    if holiday_name_string.include?("_")
       cap2_season = []
       split_season = season_string.split("_")
       split_season.each do |cap|
