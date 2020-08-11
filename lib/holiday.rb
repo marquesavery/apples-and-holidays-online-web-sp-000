@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, holiday_name|
     holiday_name_string = holiday_name.to_s
-    cap_season = season_string.capitalize
+    cap_season = season.to_s.capitalize
     puts "#{cap_season}:"
 #    binding.pry
     if holiday_name_string.include?("_")
